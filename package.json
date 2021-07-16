@@ -1,0 +1,14 @@
+{
+  "name": "expressparfumelandung",
+  "version": "1.0.0",
+  "description": "parfume landing with node server with it",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "max",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
