@@ -33,14 +33,14 @@ p {
   height: 58px;
   background-color: transparent;
   border-radius: 50%;
-  margin-left: 315px;
 }
 .nav-menu-item {
   margin-right: 75px;
   border-bottom: transparent solid;
 }
-.nav-menu-item:hover {
+.nav-menu-link:hover {
   border-bottom: #b2405d solid;
+  color: #fff
 }
 .nav-menu-link {
   text-decoration: none;
@@ -59,7 +59,7 @@ p {
   display: flex;
   padding: 0;
 }
-.nav {
+.my-nav {
   display: flex;
   align-items: center;
 }
@@ -92,7 +92,6 @@ p {
   letter-spacing: -0.04em;
 
   color: #ffffff;
-  margin: 115px 82px 104px 175px;
 }
 .add-to-cart-button {
   cursor: pointer;
@@ -114,7 +113,7 @@ p {
   display: flex;
   margin-bottom: 60px;
 }
-.card {
+.my-card {
   display: block;
   top: 90%;
 }
@@ -138,16 +137,15 @@ p {
   color: #fcfbfb;
   display: inline-block;
 }
-.line {
-  vertical-align: 190%;
-  margin-left: 175px;
-  margin-right: 20px;
+.Line {
+  position: relative;
+  top: 10%;
+  margin-right: 2%;
 }
 #slider {
   width: 350px;
   height: 397px;
   position: relative;
-  margin: 0 62px 71px 0;
   padding: 0;
 }
 .slide {
@@ -192,6 +190,8 @@ p {
   outline: 0;
 }
 .play-button {
+  position: relative;
+  text-align: center;
   align-items: center;
   justify-content: center;
   background-color: transparent;
@@ -203,9 +203,9 @@ p {
   max-height: 60px;
 }
 .play-icon {
-  position: relative;
-  top: -42%;
-  right: 51%;
+  position: absolute;
+  right: 44%;
+  top:42%;
 }
 .product-details {
   margin: 100px 169px 66px 175px;
@@ -291,6 +291,7 @@ p {
 }
 
 .structure-card {
+  padding-top: 40%;
   position: relative;
   width: 330px;
   height: 525px;
@@ -300,7 +301,6 @@ p {
 }
 .hero-structure {
   display: flex;
-  margin-left: 175px;
 }
 .structure-sum {
   font-size: 20px;
@@ -356,19 +356,20 @@ p {
 }
 .additional-product-card {
   display: flex;
+  background-color: transparent;
 }
 .additional-image {
+  display: inline-block;
   margin-right: 46px;
 }
 .additional-product-card::before {
+  margin-right: 5%;
   counter-increment: cards;
   content: "0" counter(cards);
   color: #fff;
   position: relative;
-  top: 170px;
+  top: 50%;
   left: 0;
-  margin-left: 175px;
-  margin-right: 46px;
   font-size: 50px;
   line-height: 66px;
   /* identical to box height, or 132% */
@@ -385,9 +386,6 @@ p {
   letter-spacing: -0.02em;
 
   color: #ffffff;
-}
-.products-list {
-  display: flex;
 }
 .user-email {
   border: none;
@@ -494,7 +492,6 @@ p {
 }
 #cheer {
   position: relative;
-  bottom: 30%;
 }
 #last-detail:hover {
   border-image: linear-gradient(to left, #3a1b22, #b2405d);
