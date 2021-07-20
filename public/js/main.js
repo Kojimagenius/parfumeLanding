@@ -1,3 +1,5 @@
+
+
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide")
 console.log(slides[0])
@@ -8,16 +10,29 @@ const previousButton = document.querySelector(".left-button")
 const sbmButton = document.querySelector(".send-email-button")
 
 
-sbmButton.onclick = (evt) =>{
-  evt.preventDefault();
-  const emailForm = document.querySelector(".send-email-form")
-  let emailFrom = document.querySelector(".user-email").value
-  console.log(emailFrom)
-  emailForm.action = "mailto:myTestMail@gmail.com?body=contact%20me%20on%20my%20buisness%20email:%20"+emailFrom;
-  emailForm.submit();
+// sbmButton.onclick = (evt) =>{
+//   evt.preventDefault();
+//   const emailForm = document.querySelector(".send-email-form")
+//   let emailFrom = document.querySelector(".user-email").value
+//   let mailDetails = {
+//     from: "maxdun25@gmail.com",
+//     to: emailFrom,
+//     subject: "Parfume details and other",
+//     text: "Testing"
+//   }
+//   mailTransporter.sendMail(mailDetails, (err,data) => {
+//     if(err){
+//       console.log("smth went wrong")
+//     }else{
+//       alert("email sent sucssesfully!")
+//     }
+//   })
+//   //console.log(emailFrom)
+//   //emailForm.action = "mailto:myTestMail@gmail.com?body=contact%20me%20on%20my%20buisness%20email:%20"+emailFrom;
+//   emailForm.submit();
 
 
-}
+// }
 nextButton.onclick = () => {
   slides[currentSlide].classList.toggle("showing")
   currentSlide = (currentSlide+1)%slides.length

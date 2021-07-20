@@ -191,12 +191,14 @@
     </div>
   </div>
   
+
+
   <footer class='conclusion'>
     <div class="email-section">
       <img src="images/Logo.png" alt="logo" class="com-logo">
-      <form action="mailto:myTestMail@gmail.com" enctype="text/plain" method="POST" class="send-email-form">
-        <input type="email" value="your buisness email" class="user-email">
-        <button class="send-email-button">
+      <form action="/sendEmail" method="POST" class="send-email-form">
+        <input name="email" type="email" value="your buisness email" class="user-email">
+        <button type ="submit" class="send-email-button">
           <span id='cheer'>Get started </span>
           <img src="images/right-arrow.svg" alt="get started icon" class="send-email-pic">
         </button>
